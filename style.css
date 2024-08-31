@@ -15,6 +15,7 @@
   --accent-pink: #ff0081;
   --accent-green: #008080;
   --background: #008080;
+  --accent-red: #ff0000;
 
   --max-width: 2000px;
   --overflow-pad: 12rem;
@@ -194,6 +195,60 @@ div.par-content {
 div.par-content p {
   max-width: 50rem;
   text-align: center;
+}
+div.anime-right h1,
+div.anime-left h1 {
+  text-align: center;
+  background-color: var(--light-gray-accent);
+  border: solid 3px var(--gray-accent);
+}
+
+div.anime-main {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+div.anime-left {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+div.anime-right {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+
+div.top-animacijas {
+  background-color: var(--accent-blue);
+  border: solid 3px var(--gray-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.a-saites {
+  background-color: var(--foreground);
+  border: solid 3px var(--gray-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.misc-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.top-a-teksts {
+}
+
+div.pazinojums {
+  text-align: center;
+  background-color: var(--accent-pink);
+  border: solid 3px var(--gray-accent);
 }
 
 .accent-gray {
