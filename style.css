@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 18px;
+  --gray-accent: #818181;
+  --light-gray-accent: #c3c3c3;
+  --foreground: #fdffff;
+  --accent-blue: #010081;
+  --accent-pink: #ff0081;
+  --accent-green: #008080;
+  --background: #008080;
+
+  --max-width: 2000px;
+  --overflow-pad: 12rem;
+}
+
+::selection {
+  color: var(--foreground);
+  background: var(--accent-pink);
+}
+
+html {
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+button {
+  border-radius: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+}
+
+.container > * {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: auto;
+}
+
+div.screen {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+div.landing {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 6rem 2rem 1fr;
+}
+
+div.landing-top {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  background-color: var(--light-gray-accent);
+  border: solid 3px var(--gray-accent);
+}
+
+div.landing-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.landing-main h1 {
+  font-size: 10rem;
+}
+
+div.landing-scroll {
+  background: rgb(255, 0, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 129, 1) 0%,
+    rgba(129, 129, 129, 1) 100%
+  );
+  border: solid 3px var(--gray-accent);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+div.landing-scroll p {
+  animation: RightScroll 60s infinite linear;
+  text-wrap: nowrap;
+}
+
+@keyframes RightScroll {
+  0% {
+    transform: translate(30%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+div.landing-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.landing-text h1 {
+  user-select: none;
+  font-size: 3rem;
+  background: url("https://upload.wikimedia.org/wikipedia/en/5/51/Igor_-_Tyler%2C_the_Creator.jpg") -11.5rem -4.5rem;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding: 0.5rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+div.landing-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.landing-buttons a {
+  width: 5rem;
+  height: 2rem;
+  font-size: 120%;
+}
+div.landing-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+div.landing-image img {
+  width: 50%;
+  height: 5rem;
+}
+div.footer {
+  max-width: var(--max-width);
+  position: relative;
+}
+
+div.footer h2 {
+  font-style: italic;
+  opacity: 0.5;
+  padding-right: 2rem;
+}
+
+div.navbar {
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  background-color: var(--light-gray-accent);
+  border: solid 3px var(--gray-accent);
+}
+
+div.navbar-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+div.navbar-buttons button {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+div.par-content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div.par-content p {
+  max-width: 50rem;
+  text-align: center;
+}
+
+.accent-gray {
+  color: var(--gray-accent);
+}
+
+.accent-pink {
+  color: var(--accent-pink);
+}
+
+.accent-blue {
+  color: var(--accent-blue);
+}
+
+.accent-green {
+  color: var(--accent-green);
+}
+
+.accent-light-gray {
+  color: var(--light-gray-accent);
+}
+
+.italic {
+  font-style: italic;
+}
