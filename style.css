@@ -66,7 +66,7 @@ div.screen {
 div.landing {
   display: grid;
   height: 100vh;
-  grid-template-rows: 6rem 2rem 1fr;
+  grid-template-rows: 15% auto 1fr;
 }
 
 div.landing-top {
@@ -249,6 +249,81 @@ div.pazinojums {
   text-align: center;
   background-color: var(--accent-pink);
   border: solid 3px var(--gray-accent);
+}
+
+@media (max-width: 1660px) {
+  div.landing-text h1 {
+    user-select: none;
+    font-size: 2rem;
+  }
+
+  div.landing-buttons a {
+    width: 5rem;
+    height: 2rem;
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 1170px) {
+  div.landing {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 12rem auto 70%;
+  }
+
+  div.anime-left h1,
+  div.anime-right h1 {
+    font-size: 1.5rem;
+  }
+
+  div.top-a-teksts p {
+    font-size: 0.7rem;
+  }
+
+  div.par-content p {
+    font-size: 0.7rem;
+  }
+
+  div.anime-main {
+    grid-template-columns: 1fr;
+  }
+
+  div.landing-top {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
+  div.landing-text h1 {
+    user-select: none;
+    font-size: 2rem;
+  }
+
+  div.landing-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  div.landing-buttons a {
+    width: 5rem;
+    height: 2rem;
+    font-size: 80%;
+  }
+  div.landing-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  div.pazinojums {
+    font-size: 0.7rem;
+  }
+
+  div.landing-main img {
+    max-width: 20rem;
+  }
 }
 
 .accent-gray {
