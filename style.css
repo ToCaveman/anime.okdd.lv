@@ -310,8 +310,8 @@ div.pazinojums {
   }
 
   div.landing-buttons a {
-    width: 5rem;
-    height: 2rem;
+    width: auto;
+    height: auto;
     font-size: 80%;
   }
   div.landing-image {
