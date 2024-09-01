@@ -141,7 +141,7 @@ div.landing-buttons {
 }
 
 div.landing-buttons a {
-  width: 5rem;
+  width: auto;
   height: 2rem;
   font-size: 120%;
 }
@@ -226,12 +226,17 @@ div.top-animacijas {
   justify-content: center;
 }
 
+div.top-animacijas p {
+  font-size: 1.5rem;
+}
+
 div.a-saites {
   background-color: var(--foreground);
   border: solid 3px var(--gray-accent);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
 
 div.misc-container {
